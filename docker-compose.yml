@@ -1,0 +1,12 @@
+version: '2'
+services:
+  bcrypt:
+    image: mike/bcrypt:latest
+
+    ports:
+      - 8080:8080
+#    volumes:
+#      - /data/bcrypt_log:/usr/local/tomcat/logs
+    environment:
+      TZ: Asia/Shanghai
+
